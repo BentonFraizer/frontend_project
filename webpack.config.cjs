@@ -11,6 +11,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
+  mode: 'development',
   plugins: [
     new HtmlWebpackPlugin({
       filename: './index.html',
@@ -37,4 +38,14 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, './src'),
+    },
+    open: true,
+    liveReload: true,
+    compress: true,
+    port: 9000,
+  },
+  target: 'web',
 };

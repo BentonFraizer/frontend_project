@@ -4,16 +4,20 @@
   "description": "hw_lesson_2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BentonFraizer/frontend_project.git"
+    "build:dev": "npx webpack --mode=development",
+    "build:prod": "npx webpack --mode=production"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BentonFraizer/frontend_project/issues"
-  },
-  "homepage": "https://github.com/BentonFraizer/frontend_project#readme"
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "html-inline-css-webpack-plugin": "^1.11.2",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
 }

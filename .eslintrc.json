@@ -10,6 +10,8 @@
     "sourceType": "module"
   },
   "rules": {
-    "undefined": 0
+    "undefined": 0,
+    "linebreak-style": 0,
+    "quotes": ["error", "single"]
   }
 }

@@ -35,7 +35,7 @@
   "browserlist": "> 1%, not dead",
   "lint-staged": {
     "src/**/*.{ts, js}": [
-      "eslint --fix",
+      "eslint",
       "prettier --write"
     ]
   }

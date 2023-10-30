@@ -7,14 +7,22 @@
     "build:dev": "npx webpack --mode=development",
     "build:prod": "npx webpack --mode=production",
     "start-server": "npx webpack serve",
-    "format": "node ./node_modules/prettier/bin/prettier.cjs --check --config ./prettier.json ./src/script.ts --log-level warn"
+    "prettier-format": "node ./node_modules/prettier/bin/prettier.cjs --check --config ./prettier.json ./src/script.ts --log-level warn",
+    "lint:check": "npx eslint ./src/**/* ",
+    "lint:fix": "npx eslint ./src/**/* --fix",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "eslint": "^8.52.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0",
     "html-inline-css-webpack-plugin": "^1.11.2",
     "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
     "mini-css-extract-plugin": "^2.7.6",
     "prettier": "^3.0.3",
     "style-loader": "^3.3.3",
@@ -24,5 +32,11 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
-  "browserlist": "> 1%, not dead"
+  "browserlist": "> 1%, not dead",
+  "lint-staged": {
+    "src/**/*.{ts, js}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
 }

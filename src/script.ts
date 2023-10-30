@@ -6,6 +6,5 @@ const fiveNum = 5; // переменная объявлена для прове�
 const doubleNumber = (someNum) => someNum * 2;
 
 doubleNumber(fiveNum);
-doubleNumber(fiveNum);
 
 console.log('In this variable we can see:', newVar);

@@ -3,10 +3,191 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PISH lesson 1.1.3. Prettier, ESLint, pre-commit, husky</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>PISH lesson 1.3.2. SCSS. CSS Flexbox, Grid Layout, Верстка компонентов</title>
   </head>
   <body>
-    <h1 class="main-title">Not empty body. Still do not understand how does Webpack works.</h1>
+    <h1 class="main-title">Homework 1.3.2 SCSS</h1>
+    <div class="layout">
+      <h3 class="title">С этим товаром часто смотрят</h3>
+      <div class="cards">
+        <div class="card">
+          <div class="card__image">
+            <img src="https://source.unsplash.com/random/150x150/?img=1" alt="rand pict 1">
+          </div>
+          <div class="card__info">
+            <div class="rating">
+              <div class="rating__stars">
+                <ul>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                </ul>
+              </div>
+              <div class="rating__reviews">78 Отзывов</div>
+            </div>
+            <div class="description">
+              LED телевизор Samsung UE32M555OAUXRU Silver
+            </div>
+          </div>
+          <div class="price">
+            <div class="price__wrapper">
+              <div class="price__discount">
+                <div class="old">25 990 р.</div>
+                <div class="discount">-3000</div>
+              </div>
+              <div class="price__current">
+                22 990 р.
+              </div>
+            </div>
+            <div class="price__basket">
+              <img src="https://static.eldorado.ru/images/icon_svg/add.svg" alt="basket image">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="https://source.unsplash.com/random/150x150/?img=2" alt="rand pict 1">
+          </div>
+          <div class="card__info">
+            <div class="rating">
+              <div class="rating__stars">
+                <ul>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                </ul>
+              </div>
+              <div class="rating__reviews">8 Отзывов</div>
+            </div>
+            <div class="description">
+              LED телевизор LG 32LM630BPLA
+            </div>
+          </div>
+          <div class="price">
+            <div class="price__wrapper">
+              <div class="price__discount">
+                <div class="old">20 990 р.</div>
+                <div class="discount">-2000</div>
+              </div>
+              <div class="price__current">
+                18 990 р.
+              </div>
+            </div>
+            <div class="price__basket">
+              <img src="https://static.eldorado.ru/images/icon_svg/add.svg" alt="basket image">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="https://source.unsplash.com/random/150x150/?img=3" alt="rand pict 1">
+          </div>
+          <div class="card__info">
+            <div class="rating">
+              <div class="rating__stars">
+                <ul>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                </ul>
+              </div>
+              <div class="rating__reviews">18 Отзывов</div>
+            </div>
+            <div class="description">
+              Ultra HD (4K) LED телевизор Samsung UE43RU7170U
+            </div>
+          </div>
+          <div class="price">
+            <div class="price__wrapper">
+              <div class="price__discount">
+                <div class="old">33 990 р.</div>
+                <div class="discount">-2000</div>
+              </div>
+              <div class="price__current">
+                31 990 р.
+              </div>
+            </div>
+            <div class="price__basket">
+              <img src="https://static.eldorado.ru/images/icon_svg/add.svg" alt="basket image">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="https://source.unsplash.com/random/150x150/?img=4" alt="rand pict 1">
+          </div>
+          <div class="card__info">
+            <div class="rating">
+              <div class="rating__stars">
+                <ul>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star_empty_new.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                </ul>
+              </div>
+              <div class="rating__reviews">78 Отзывов</div>
+            </div>
+            <div class="description">
+              LED телевизор LG 43LK5100PLB
+            </div>
+          </div>
+          <div class="price">
+            <div class="price__wrapper">
+              <div class="price__current">
+                22 490 р.
+              </div>
+            </div>
+            <div class="price__basket">
+              <img src="https://static.eldorado.ru/images/icon_svg/add.svg" alt="basket image">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="https://source.unsplash.com/random/150x150/?img=5" alt="rand pict 1">
+          </div>
+          <div class="card__info">
+            <div class="rating">
+              <div class="rating__stars">
+                <ul>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                  <li><img src="https://gallery.retailrocket.net/5ba1feda97a5252320437f20/star.2.26fe6451.svg" width="12" height="12" alt="" aria-hidden="true"></li>
+                </ul>
+              </div>
+              <div class="rating__reviews">33 Отзывов</div>
+            </div>
+            <div class="description">
+              LED телевизор Harier LE43K6000SF
+            </div>
+          </div>
+          <div class="price">
+            <div class="price__wrapper">
+              <div class="price__discount">
+                <div class="old">19 990 р.</div>
+                <div class="discount">-1000</div>
+              </div>
+              <div class="price__current">
+                18 990 р.
+              </div>
+            </div>
+            <div class="price__basket">
+              <img src="https://static.eldorado.ru/images/icon_svg/add.svg" alt="basket image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+

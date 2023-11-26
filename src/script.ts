@@ -1,3 +1,5 @@
+import './styles.scss';
+
 const varForTest = 'very important value';
 const newVar = `${varForTest}!`;
 const fiveNum = 5; // переменная объявлена для проверки работоспособности ESLint

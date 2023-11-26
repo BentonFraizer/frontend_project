@@ -19,7 +19,7 @@ module.exports = {
     }),
     // new HTMLInlineCSSWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: '[name].scss',
     }),
   ],
   module: {
@@ -32,6 +32,14 @@ module.exports = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
+      },
+      {
+        test: /\.scss$/i,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
       },
     ],
   },

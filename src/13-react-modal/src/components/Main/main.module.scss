@@ -1,0 +1,24 @@
+.main {
+  background-color: #282c34;
+  height: calc(100vh - 2px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+.layout {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1270px;
+  height: 700px;
+  padding: 30px;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

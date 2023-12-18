@@ -1,0 +1,7 @@
+.main {
+  height: calc(100vh - 154px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid skyblue;
+}

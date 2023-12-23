@@ -1,0 +1,11 @@
+.input__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 0px 20px 0px;
+}
+
+.input__wrapper input {
+  height: 23px;
+  padding: 0 10px;
+}

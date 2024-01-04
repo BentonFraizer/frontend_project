@@ -1,0 +1,77 @@
+[
+  {
+    "kinopoiskId": 1,
+    "nameRu": "Мстители",
+    "nameEn": "The Avengers",
+    "nameOriginal": "The Avengers",
+    "countries": [
+      {
+        "country": "США"
+      }
+    ],
+    "genres": [
+      {
+        "genre": "фантастика"
+      }
+    ],
+    "ratingKinopoisk": 7.9,
+    "ratingImdb": 7.9,
+    "year": 2012,
+    "type": "FILM",
+    "posterUrl": "https://loremflickr.com/500/400/movie",
+    "posterUrlPreview": "https://loremflickr.com/320/240/movie",
+    "watched": false,
+    "bookmark": false,
+    "favourite": false
+  },
+  {
+    "kinopoiskId": 2,
+    "nameRu": "Реквием по мечте",
+    "nameEn": "Requiem for a Dream",
+    "nameOriginal": "Requiem for a Dream",
+    "countries": [
+      {
+        "country": "США"
+      }
+    ],
+    "genres": [
+      {
+        "genre": "драма"
+      }
+    ],
+    "ratingKinopoisk": 8.0,
+    "ratingImdb": 8.3,
+    "year": 2000,
+    "type": "FILM",
+    "posterUrl": "https://loremflickr.com/500/400/movie",
+    "posterUrlPreview": "https://loremflickr.com/320/240/movie",
+    "watched": true,
+    "bookmark": false,
+    "favourite": true
+  },
+  {
+    "kinopoiskId": 3,
+    "nameRu": "Алита: Боевой ангел",
+    "nameEn": "Alita: Battle Angel",
+    "nameOriginal": "Alita: Battle Angel",
+    "countries": [
+      {
+        "country": "США"
+      }
+    ],
+    "genres": [
+      {
+        "genre": "боевик"
+      }
+    ],
+    "ratingKinopoisk": 7.2,
+    "ratingImdb": 7.3,
+    "year": 2019,
+    "type": "FILM",
+    "posterUrl": "https://loremflickr.com/500/400/movie",
+    "posterUrlPreview": "https://loremflickr.com/320/240/movie",
+    "watched": false,
+    "bookmark": true,
+    "favourite": false
+  }
+]

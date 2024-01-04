@@ -14,5 +14,5 @@
     "linebreak-style": 0,
     "quotes": ["error", "single"]
   },
-  "parser":  "@typescript-eslint/parser"
+  "parser": "@typescript-eslint/parser"
 }

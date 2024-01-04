@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #ccc;
+  width: 95%;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.poster__img img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.middle,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+}

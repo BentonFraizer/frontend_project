@@ -1,0 +1,7 @@
+.cards__wrapper {
+  height: calc(100vh - 167px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}

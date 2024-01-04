@@ -34,7 +34,7 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
-  "browserlist": "> 1%, not dead",
+  "browserslist": "> 1%, not dead",
   "lint-staged": {
     "src/**/*.{ts, js}": [
       "eslint",

@@ -1,0 +1,45 @@
+.app {
+  background-color: #282c34;
+}
+
+.body {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.items {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.item-1,
+.item-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item-1__link,
+.item-2__link {
+  color: lightblue;
+  display: block;
+  margin: 0px 0px 20px 0px;
+}
+
+.item-1__btn,
+.item-2__btn {
+  width: 100px;
+  height: 40px;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  background-color: rgba(79, 87, 101, 0.8);
+  color: lightblue;
+  font-size: 1rem;
+  cursor: pointer;
+}

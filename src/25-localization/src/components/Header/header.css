@@ -1,0 +1,19 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ru-btn,
+.en-btn {
+  width: 100px;
+  height: 40px;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  background-color: rgba(79, 87, 101, 0.8);
+  color: lightblue;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0px 10px 0px 10px;
+}

@@ -1,10 +1,9 @@
 .app {
-  text-align: center;
+  background-color: #282c34;
 }
 
-.header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body {
+  min-height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +16,13 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+
+.item-1,
+.item-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .item-1__link,

@@ -22,4 +22,18 @@
 .item-1__link,
 .item-2__link {
   color: lightblue;
+  display: block;
+  margin: 0px 0px 20px 0px;
+}
+
+.item-1__btn,
+.item-2__btn {
+  width: 100px;
+  height: 40px;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  background-color: rgba(79, 87, 101, 0.8);
+  color: lightblue;
+  font-size: 1rem;
+  cursor: pointer;
 }

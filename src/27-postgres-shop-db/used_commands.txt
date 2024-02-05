@@ -1,0 +1,44 @@
+Для создания базы данных и таблиц согласно задания были выполнены команды, расположненые ниже.
+Также прилагаю скриншоты. Они находятся в папке screenshots.
+
+CREATE DATABASE shop
+
+ALTER DATABASE shop RENAME TO shop_db
+
+CREATE TABLE categories (
+    category_id SERIAL PRIMARY KEY,
+    category_name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE products (
+    product_id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    price int NOT NULL,
+	date timestamp not null,
+    category_id INT REFERENCES categories(category_id)
+);
+
+ALTER TABLE products ADD COLUMN date timestamp not null;
+
+insert into products(title, description, price, date, category_id)
+values('Кабель TUBON Цифровой коаксиальный RCA - RCA', 'Аудиокабель', '1', now(), 1),
+('Патч-корд UTP Cablexpert кат.5e', 'Кабель для интернет-соединения', '51', now(), 1),
+('USB-флеш-накопитель BOROFONE', 'USB-флеш-накопитель', '10', now(), 1),
+('Наушники беспроводные hoco W35 MAX new', 'Наушники', '120', now(), 1),
+('Толстовка BT shop Хит года', 'Толстовка', '31', now(), 2);
+
+insert into categories(category_name)
+values('Электроника'),
+('Одежда');
+
+
+select * from products
+select * from categories
+
+select title from products
+
+select title from products
+where category_id = 1
+
+drop table products

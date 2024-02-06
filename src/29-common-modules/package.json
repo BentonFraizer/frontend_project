@@ -1,0 +1,17 @@
+{
+  "name": "29-common-modules",
+  "version": "1.0.0",
+  "description": "hw_lesson_29",
+  "main": "index.js",
+  "scripts": {
+    "init:dist": "node ./src/createDistDir.js",
+    "writeport": "node ./src/writePort.js",
+    "readport": "node ./src/readPort.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1"
+  }
+}

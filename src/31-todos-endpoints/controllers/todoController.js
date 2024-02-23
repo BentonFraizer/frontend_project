@@ -1,4 +1,5 @@
 import { Todos } from '../models/todos.js';
+import prepareFieldsToSQLQuery from '../utils.js';
 
 // eslint-disable-next-line import/prefer-default-export
 export class TodoController {
@@ -18,14 +19,24 @@ export class TodoController {
     try {
       await Todos.createTodo(title, description, completed, tag_id);
     } catch (error) {
-      console.log('---> error', error);
       res.status(500).send({ success: false, message: `${error}` });
     }
 
     res.status(200).send({ success: true, message: 'Задача успешно создана' });
   }
 
-  static async patchTodoById(req, res) {}
+  static async patchTodoById(req, res) {
+    const { todoId } = req.params;
+    const queryFields = prepareFieldsToSQLQuery(req.body);
+
+    try {
+      await Todos.patchTodo(queryFields, todoId);
+    } catch (error) {
+      res.status(500).send({ success: false, message: `${error}` });
+    }
+
+    res.status(200).send({ success: true, message: 'Задача успешно обновлена' });
+  }
 
   static async deleteTodoById(req, res) {
     const { todoId } = req.params;

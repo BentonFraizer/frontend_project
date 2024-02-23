@@ -16,11 +16,22 @@ export class Todos {
       );
       console.log('createTodoResult', createTodoResult);
       if (createTodoResult.rowCount !== 1) {
-        console.log('тут?');
         throw new Error();
       }
     } catch (error) {
       throw new Error(`createTodo: ${error}`);
+    }
+  }
+
+  static async patchTodo(queryFields, id) {
+    try {
+      const changeTodoResult = await pool.query(`update todos set ${queryFields} where id = $1`, [id]);
+      console.log('createTodoResult', changeTodoResult);
+      if (changeTodoResult.rowCount !== 1) {
+        throw new Error();
+      }
+    } catch (error) {
+      throw new Error(`changeTodo: ${error}`);
     }
   }
 
